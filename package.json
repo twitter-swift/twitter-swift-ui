@@ -1,4 +1,7 @@
 {
   "name": "twitter-swift-ui",
-  "packageManager": "yarn@3.5.1"
+  "packageManager": "yarn@3.5.1",
+  "devDependencies": {
+    "@nx/angular": "^16.1.4"
+  }
 }
