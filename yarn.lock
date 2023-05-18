@@ -18097,7 +18097,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ng-packagr@npm:^16.0.1":
+"ng-packagr@npm:~16.0.0":
   version: 16.0.1
   resolution: "ng-packagr@npm:16.0.1"
   dependencies:
@@ -24087,6 +24087,7 @@ __metadata:
     "@nx/angular": ^16.2.1
     "@nx/eslint-plugin": ^16.2.1
     "@nx/jest": ^16.2.1
+    "@nx/js": 16.2.1
     "@nx/linter": ^16.2.1
     "@nx/storybook": ^16.2.1
     "@schematics/angular": ^16.0.2
@@ -24116,7 +24117,7 @@ __metadata:
     jest: ^29.5.0
     jest-environment-jsdom: ^29.5.0
     jest-preset-angular: ^13.1.1
-    ng-packagr: ^16.0.1
+    ng-packagr: ~16.0.0
     nx: ^16.2.1
     postcss: ^8.4.23
     postcss-import: ^15.1.0
