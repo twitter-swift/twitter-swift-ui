@@ -1,0 +1,24 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+STAGED_FILES=($(git diff --diff-filter=d --cached --name-only))
+
+if [[ "$STAGED_FILES" = "" ]]; then
+  exit 0
+fi
+
+yarn run affected:lint --uncommitted --quiet --fix
+yarn run format:whrite --uncommitted
+
+ESLINT_EXIT="$?"
+
+git add "${STAGED_FILES[@]}"
+
+if [[ "${ESLINT_EXIT}" == 0 ]]; then
+  printf "COMMIT SUCCEEDED"
+else
+  printf "COMMIT FAILED"
+  exit 1
+fi
+
+exit $?

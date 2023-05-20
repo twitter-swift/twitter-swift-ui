@@ -1,6 +1,15 @@
 {
   "name": "twitter-swift-ui",
   "packageManager": "yarn@3.5.1",
+  "scripts": {
+    "husky:install": "husky install",
+    "husky:uninstall": "husky uninstall",
+    "format:check": "nx format:check --libs-and-apps",
+    "format:whrite": "nx format:write --libs-and-apps",
+    "affected:build": "nx affected:build",
+    "affected:lint": "nx affected:lint",
+    "affected:test": "nx affected:test"
+  },
   "devDependencies": {
     "@angular-devkit/build-angular": "^16.0.2",
     "@angular-devkit/core": "^16.0.2",
