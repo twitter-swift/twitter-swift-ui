@@ -4769,6 +4769,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@nrwl/web@npm:16.2.1":
+  version: 16.2.1
+  resolution: "@nrwl/web@npm:16.2.1"
+  dependencies:
+    "@nx/web": 16.2.1
+  checksum: c96e213f83d5e162e0f7a6fa52b38af1efe63d628797ae1c0316bba7b59c2fe0c9ee75ce3e5cd3b2e766c9dad74d2dc8ecbeaa6b1aec71047bfe72a43e60664c
+  languageName: node
+  linkType: hard
+
 "@nrwl/webpack@npm:16.2.1":
   version: 16.2.1
   resolution: "@nrwl/webpack@npm:16.2.1"
@@ -5052,6 +5061,22 @@ __metadata:
     enquirer: ~2.3.6
     semver: 7.3.4
   checksum: 19222851a944dfaa8da130803daa784eac04f19886b435c6a4a39fd0857decca4df738dff90b350171453ddf7e330dd0955b886dc30109fbe44d80140c0721a3
+  languageName: node
+  linkType: hard
+
+"@nx/web@npm:16.2.1":
+  version: 16.2.1
+  resolution: "@nx/web@npm:16.2.1"
+  dependencies:
+    "@nrwl/web": 16.2.1
+    "@nx/devkit": 16.2.1
+    "@nx/js": 16.2.1
+    chalk: ^4.1.0
+    chokidar: ^3.5.1
+    http-server: ^14.1.0
+    ignore: ^5.0.4
+    tslib: ^2.3.0
+  checksum: 0bb34f11d988889e04515ca1125d4b1f06b78ac72ae95c0d77513a41dac4affa5d9ddf3a15d9c5f02a3f62283bc1176bfb830fdffed63312114e10413ce320fe
   languageName: node
   linkType: hard
 
@@ -6430,7 +6455,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/core-common@npm:7.0.12":
+"@storybook/core-common@npm:7.0.12, @storybook/core-common@npm:^7.0.9":
   version: 7.0.12
   resolution: "@storybook/core-common@npm:7.0.12"
   dependencies:
@@ -17135,7 +17160,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"loose-envify@npm:^1.4.0":
+"loose-envify@npm:^1.1.0, loose-envify@npm:^1.4.0":
   version: 1.4.0
   resolution: "loose-envify@npm:1.4.0"
   dependencies:
@@ -21158,6 +21183,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-dom@npm:^18.2.0":
+  version: 18.2.0
+  resolution: "react-dom@npm:18.2.0"
+  dependencies:
+    loose-envify: ^1.1.0
+    scheduler: ^0.23.0
+  peerDependencies:
+    react: ^18.2.0
+  checksum: 7d323310bea3a91be2965f9468d552f201b1c27891e45ddc2d6b8f717680c95a75ae0bc1e3f5cf41472446a2589a75aed4483aee8169287909fcd59ad149e8cc
+  languageName: node
+  linkType: hard
+
 "react-inspector@npm:^6.0.0":
   version: 6.0.1
   resolution: "react-inspector@npm:6.0.1"
@@ -21178,6 +21215,15 @@ __metadata:
   version: 18.2.0
   resolution: "react-is@npm:18.2.0"
   checksum: e72d0ba81b5922759e4aff17e0252bd29988f9642ed817f56b25a3e217e13eea8a7f2322af99a06edb779da12d5d636e9fda473d620df9a3da0df2a74141d53e
+  languageName: node
+  linkType: hard
+
+"react@npm:^18.2.0":
+  version: 18.2.0
+  resolution: "react@npm:18.2.0"
+  dependencies:
+    loose-envify: ^1.1.0
+  checksum: 88e38092da8839b830cda6feef2e8505dec8ace60579e46aa5490fc3dc9bba0bd50336507dc166f43e3afc1c42939c09fe33b25fae889d6f402721dcd78fca1b
   languageName: node
   linkType: hard
 
@@ -22038,6 +22084,15 @@ __metadata:
   dependencies:
     xmlchars: ^2.2.0
   checksum: d3fa3e2aaf6c65ed52ee993aff1891fc47d5e47d515164b5449cbf5da2cbdc396137e55590472e64c5c436c14ae64a8a03c29b9e7389fc6f14035cf4e982ef3b
+  languageName: node
+  linkType: hard
+
+"scheduler@npm:^0.23.0":
+  version: 0.23.0
+  resolution: "scheduler@npm:0.23.0"
+  dependencies:
+    loose-envify: ^1.1.0
+  checksum: d79192eeaa12abef860c195ea45d37cbf2bbf5f66e3c4dcd16f54a7da53b17788a70d109ee3d3dde1a0fd50e6a8fc171f4300356c5aee4fc0171de526bf35f8a
   languageName: node
   linkType: hard
 
@@ -24090,12 +24145,14 @@ __metadata:
     "@nx/js": 16.2.1
     "@nx/linter": ^16.2.1
     "@nx/storybook": ^16.2.1
+    "@nx/web": 16.2.1
     "@schematics/angular": ^16.0.2
     "@semantic-release/gitlab": ^12.0.1
     "@storybook/addon-actions": ^7.0.12
     "@storybook/addon-essentials": ^7.0.12
     "@storybook/angular": ^7.0.12
     "@storybook/builder-webpack5": ^7.0.12
+    "@storybook/core-common": ^7.0.9
     "@storybook/core-server": ^7.0.12
     "@storybook/manager-webpack5": ^6.5.16
     "@theunderscorer/nx-semantic-release": ^2.4.0
@@ -24124,6 +24181,8 @@ __metadata:
     postcss-preset-env: ^8.3.2
     postcss-url: ^10.1.3
     prettier: ^2.8.8
+    react: ^18.2.0
+    react-dom: ^18.2.0
     rxjs: ^7.8.1
     storybook-addon-themes: ^6.1.0
     ts-jest: ^29.1.0

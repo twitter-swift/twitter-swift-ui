@@ -45,6 +45,47 @@
           "libs/frontend/common/shared/ui/ts-ui-kit/**/*.html"
         ]
       }
+    },
+    "storybook": {
+      "executor": "@storybook/angular:start-storybook",
+      "options": {
+        "port": 4400,
+        "configDir": "libs/frontend/common/shared/ui/ts-ui-kit/.storybook",
+        "browserTarget": "frontend-common-shared-ui-ts-ui-kit:build-storybook",
+        "compodoc": false
+      },
+      "configurations": {
+        "ci": {
+          "quiet": true
+        }
+      }
+    },
+    "build-storybook": {
+      "executor": "@storybook/angular:build-storybook",
+      "outputs": ["{options.outputDir}"],
+      "options": {
+        "outputDir": "dist/storybook/frontend-common-shared-ui-ts-ui-kit",
+        "configDir": "libs/frontend/common/shared/ui/ts-ui-kit/.storybook",
+        "browserTarget": "frontend-common-shared-ui-ts-ui-kit:build-storybook",
+        "compodoc": false
+      },
+      "configurations": {
+        "ci": {
+          "quiet": true
+        }
+      }
+    },
+    "static-storybook": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "frontend-common-shared-ui-ts-ui-kit:build-storybook",
+        "staticFilePath": "dist/storybook/frontend-common-shared-ui-ts-ui-kit"
+      },
+      "configurations": {
+        "ci": {
+          "buildTarget": "frontend-common-shared-ui-ts-ui-kit:build-storybook:ci"
+        }
+      }
     }
   }
 }
